@@ -1,8 +1,8 @@
 /* Show it is fixed to the top */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 body {
-    min-height: 75rem;
-    padding-top: 4.5rem;
+  
+ 
     background-color: #230903;
     font-family: 'Poppins', sans-serif;
   }
@@ -69,18 +69,6 @@ body {
         margin-top: 50px;
       }
 
-      .image-left{
-        background-image: url(../images/image-left.svg);
-        background-size: 571px 480px;
-        margin-top: 50px;
-        width: 571px;
-        height: 480px;
-      }
-      .image-left:hover {
-        transform: scale(0.9, 0.9);
-        transition-duration: 2s;
-      }
-
       p {
         color: #FFFFFF;
         font-size: 16px;
@@ -91,45 +79,28 @@ body {
         color: #E9B44C;
       }
 
-      .adquirir {
+      .adquirir{
         background-color: #D8572A;
         border-radius: 10px;
         color: #FFFFFF;
         letter-spacing: 4.25px;
         width: 545px;
         height: 50px;
-        animation: crescendo 1.8s alternate infinite ease-in;
-      }
 
-      @keyframes crescendo {
-        0%   {transform: scale(.6);}
-        100% {transform: scale(.7);}
       }
-     /*}
 
       .adquirir:hover {
         background-color: #d8582ac4;
         transform: scale(0.9, 0.9);
         transition-duration: 2s;
-      }*/
+      }
 
+      p {
+        margin-top: 60px;
+      }
 
-
-      .img-container{
-        width: 745px;
-        height: 768px;
-        position: relative;
-    }
-    
-    .img-container:after{
-        content: '';
-        top:0; left:0; right:0; bottom:0;
-        position: absolute;
-        -webkit-box-shadow: inset 0px 0px 10px 20px #230903;
-        -moz-box-shadow: inset 10px 0px 10px 20px #230903;
-        -ms-box-shadow: inset 10px 0px 10px 20px #230903;
-        -o-box-shadow: inset 10px 0px 10px 20px #230903;
-        box-shadow: inset 10px 5px 20px 20px #230903;    
-    }
+      .img-container {
+        box-shadow: 20px 15px 20px 25px #0000009d;
+      }
 
     
