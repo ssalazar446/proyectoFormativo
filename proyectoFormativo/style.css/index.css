@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 body {
   
- 
+    padding-top: 9rem;
     background-color: #230903;
     font-family: 'Poppins', sans-serif;
   }
@@ -90,9 +90,11 @@ body {
       }
 
       .adquirir:hover {
+
         background-color: #d8582ac4;
-        transform: scale(0.9, 0.9);
-        transition-duration: 2s;
+        color: #E9B44C;
+        transform: scale(0.9, 0.9) 2s;
+      
       }
 
       p {
@@ -101,6 +103,11 @@ body {
 
       .img-container {
         box-shadow: 20px 15px 20px 25px #0000009d;
+      }
+
+      .iniciarSesion {
+        background-color: #E9B44C;
+        color: #fff;
       }
 
     
