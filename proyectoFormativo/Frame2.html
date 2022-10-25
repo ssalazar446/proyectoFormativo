@@ -41,74 +41,14 @@
             color: #E9B44C;
         }
 
-        /* Cajas */
+        /*Imagenes */
 
-        .main-box {
-            border-color: #000000;
-            padding: 75px;
-            margin: 25px 20% 25px;
-            height: 200px;
-            width: 900px;
-            display: inline-block;
-            
-        }
-
-        /* Imagenes 1 */
-
-        .img-thumbnail{
-            margin-left: 200px;
-            padding: 10px; 
-            margin: 60px; 
-            border-radius: 20px;
-            float: left; 
-            width: 311px;
-            height: 229px;
-
-        }
-
-        /*Imagenes 2 */ 
-        .img-fluid {
-            
-            margin-left: 200px;
-            padding: 10px; 
-            margin: 60px; 
-            border-radius: 20px;
-            height: 290px;
-            width: 1663px;
-            border-color: 2px solid white;
-        }
-
-        /*Textos */
-
-        .lima-text{
-            text-align: left;
-            font-size: 1.2rem;
-            font-weight: bold;
-            font-family: 'Poppins', sans-serif;
-            color: #000000;
-            padding-top: 10px;
-            padding-bottom: 15px;
-            background-color: #fffdfd80;
-            width: 1663px;
-            margin: 72px; 
-            margin-top: -248px;
-            border-radius: 10px;
-            height: 145px;
-        }
-
-        .lima-text:hover{
-            background-color: #fffdfdaa;
-            cursor: pointer;
-        }
-
-
+        
     </style>
   </head>
   <body>
 
-    <!--Script Boostrap-->
-        <script src="js/bootstrap.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-        
+    
     <!--Titulos-->
         <h1 class="titulo-1"><b class="color-1">Nuestros destinos </b><b class="color-2">favoritos</b></h1>
         <h1 class="titulo-2"><b class="color-3">¡Estamos llenos de una cultura mágica!</b></h1>
@@ -116,22 +56,27 @@
 
     <!--sgv content-->
 
-
-    <!--imagenes 1-->
-    <div class="images-1">
-        <img src="imagenes-frame2/image 6.jpg" class="img-thumbnail" alt="...">
-        <img src="imagenes-frame2/image 7.jpg" class="img-thumbnail" alt="...">
-        <img src="imagenes-frame2/image 8.jpg" class="img-thumbnail" alt="...">
-        <img src="imagenes-frame2/image 9.jpg" class="img-thumbnail" alt="...">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12-md-12 col lg-12">
+                <img src="imagenes-frame2/image 6.jpg" class="img-fluid" id="image-center" alt="">
+                <img src="imagenes-frame2/image 7.jpg" class="img-fluid" id="image-center" alt="">
+                <img src="imagenes-frame2/image 8.jpg" class="img-fluid" id="image-center" alt="">
+                <img src="imagenes-frame2/image 9.jpg" class="img-fluid" id="image-center" alt="">
+            </div>
+        </div>
     </div>
+    <!--imagenes 1-->
+    
+
     
 
     <!--Imagenes 2-->
-    <div class="images-2">
-        <img src="imagenes-frame2/image 11.jpg" class="img-fluid" alt="...">
-        <div class="lima-text">Lima, Perú</div>
-        <div class="lima-text">Disfruta la Costa Peruana</div>
 
-    </div>
+
+    
+    <!--Script Boostrap-->
+    <script src="js/bootstrap.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        
   </body>
 </html>
