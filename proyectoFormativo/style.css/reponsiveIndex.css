@@ -1,0 +1,36 @@
+
+      @media (max-width: 1200px) {
+        .adquirir{
+          background-color: #D8572A;
+          border-radius: 10px;
+          color: #FFFFFF;
+          letter-spacing: 4.25px;
+          width: 445px;
+          height: 50px;
+  
+        }
+      }
+    
+      @media (max-width: 995px) {
+        .adquirir{
+          background-color: #D8572A;
+          border-radius: 10px;
+          color: #FFFFFF;
+          letter-spacing: 4.25px;
+          width: 345px;
+          height: 60px;
+  
+        }
+      }
+
+      @media (max-width: 765px) {
+        .adquirir{
+          background-color: #D8572A;
+          border-radius: 10px;
+          color: #FFFFFF;
+          letter-spacing: 4.25px;
+          width: 525px;
+          height: 50px;
+  
+        }
+      }
