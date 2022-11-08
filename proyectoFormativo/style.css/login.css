@@ -212,3 +212,67 @@ h2 {
     margin-left: 80px;
 
 }
+
+.square {
+  position: absolute;
+  background-image: url(../images/degradado.svg);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 25px 45px #0000001a;
+  border: 1px solid #ffffff33;
+  border-right: 1px solid #ffffff33;
+  border-bottom: 1px solid #ffffff33;
+  background: #ffffff1a;
+  border-radius: 10px;
+  animation: animate 10s linear infinite;
+  animation-delay: calc(-1s * var(--i));
+
+}
+
+@keyframes animate 
+{
+  0%,100%
+  {
+    transform: translateY(-40px);
+  }
+  50%
+  {
+    transform: translateY(40px);
+  }
+}
+
+.square:nth-child(1){
+  top: 4px;
+  right: -7px;
+  width: 100px;
+  height: 100px;
+}
+
+.square:nth-child(2){
+  top: 211px;
+  left: -23px;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+}
+
+.square:nth-child(3){
+  top: 297px;
+  right: 0px;
+  width: 80px;
+  height: 80px;
+  z-index: 2;
+}
+
+.square:nth-child(4){
+  top: 433px;
+  right: 344px;
+  width: 50px;
+  height: 50px;
+}
+
+.square:nth-child(5){
+  top: -44px;
+  right: 304px;
+  width: 60px;
+  height: 60px;
+}

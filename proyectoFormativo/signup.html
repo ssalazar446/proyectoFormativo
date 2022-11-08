@@ -22,9 +22,14 @@
             <div class="form-holder">
                 <div class="form-content">
                     <div class="form-items">
+                        <div class="square" style="--i:0;"></div>
+                        <div class="square" style="--i:1;"></div>
+                        <div class="square" style="--i:2;"></div>
+                        <div class="square" style="--i:3;"></div>
+                        <div class="square" style="--i:4;"></div>
                         <div id="formContent">
-                            <h2 class="active"><a href="login.html" class="iniciarSesion">Iniciar Sesión</a></h2>
-                            <h2 class="inactive underlineHover"><a href="#login">Registrarse</a></h2>
+                            <h2 class="inactive"><a href="login.html" class="iniciarSesion">Iniciar Sesión</a></h2>
+                            <h2 class="active underlineHover"><a href="#login">Registrarse</a></h2>
                         </div>
                         <form class="requires-validation" novalidate>
 
@@ -51,12 +56,16 @@
                                 <div class="invalid-feedback">Por favor seleccione un pais</div>
                            </div>
 
-                           <div class="col-xs-5 date">
-                            <div class="input-group input-append date" id="weekYear">
-                              <input type="text" class="form-control" name="date" value="MM / YYYY" />
-                              <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+                           <div class="col-xs-4">
+                             <div class="form-group">
+                                <div class="input-group datepicker">
+                                    <input type="text" class="form-control" readonly placeholder="Fecha de nacimiento">
+                                    <span class="input-group-addon">
+                                        <span class="fa fa-calendar"></span>
+                                    </span>
+                                </div>
                             </div>
-                          </div>
+                        </div>
 
                             <div class="col-md-12">
                                 <input class="form-control" type="email" name="email" placeholder="Email" required>
