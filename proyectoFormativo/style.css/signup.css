@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&display=swap');
+
+*, body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+    height: 100%;
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    overflow: hidden;
+}
+a {
+    color: #fff;
+    display:inline-block;
+    text-decoration: none;
+    font-weight: 400;
+  }
+  a:hover {
+    color: #fff;
+  }
+
+h2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    display:inline-block;
+  }
+ 
+
+  h2.inactive {
+  
+    border-radius: 0px 10px 10px 0px;
+    background-color: #7e7e7e;
+    color: #fff;
+    height: 48px;
+    width: 150px;
+    margin-left: -10px;
+    color: #0d0d0d;
+    padding: 14px;
+  }
+
+  h2.inactive:hover {
+    background-color: #568f92;
+
+  }
+  
+  h2.active {
+    
+    border-radius: 10px 0px 0px 10px;
+    background-color: #356B6E;
+    color: #fff;
+    height: 48px;
+    width: 150px;
+    margin-left: 0px;
+    color: #0d0d0d;
+    padding: 14px;
+  }
+  
+
+  #formContent {
+
+    margin-left: 35px;
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+    max-width: 450px;
+    position: relative;
+    padding: 0px;
+    text-align: center;
+  }
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  .form-holder {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.form-holder .form-content {
+    position: relative;
+    text-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.form-content .form-items {
+    background-image: url(../images/degradado.svg);
+    padding: 40px;
+    display: inline-block;
+    width: 456px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: left;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+
+
+
+
+.form-content label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+    color: #fff;
+}
+
+.form-content input[type=text], .form-content input[type=password], .form-content input[type=email], .form-content select {
+    width: 100%;
+    padding: 9px 20px;
+    text-align: left;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    color: #303030d8;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+}
+
+
+.btn-primary{
+    background-color: #356B6E;
+    outline: none;
+    width: 216px;
+    height: 45px;
+     box-shadow: none;
+}
+.btn-secondary {
+    width: 216px;
+    height: 45px;
+    background-color: #7e7e7e;
+    color: #ffffffd8;
+    outline: none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+    background-color: #568f92;
+    outline: none !important;
+    border: none !important;
+     box-shadow: none;
+}
+
+
+
+.invalid-feedback{
+    color: #ff606e;
+}
+
+.valid-feedback{
+   color: #2acc80;
+}
+
+.buttons {
+    margin-top: 20px;
+    margin-bottom: -35px;
+    width: 220px;
+    height: 120px;
+    margin-left: 80px;
+
+}
+
+.form-control {
+    margin: 0 auto;
+}
+
