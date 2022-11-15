@@ -7,8 +7,9 @@ html {
 body {
   background-color: #230903;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  display: flexbox;
+  display: grid;
   min-height: 100vh;
+  place-items: center;
 }
 
 
@@ -32,70 +33,90 @@ body {
 }
 
 
+
 /* Imagenes */
-
-.container{
-  width: 90%;
-  padding: 10px 40px;
-
-}
-.container .swiper-container{
-  width: 100%;
-  height: 100%;
-}
-
-.container .swiper-slide{
-  border: 8px solid #230903;
-  min-height: 150%;
-  text-align: center;
+.slider {
+  height: 250px;
+  margin: auto;
   position: relative;
-  font-size: 18px;
-  background: #230903;
-  border-radius: 15px;
-  text-align: start;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(250 * 18);
+  animation: scroll 25s linear infinite;
+}
+
+.slider-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
+  100% {
+    transform: translateX(calc(-250px * 9));
+  }
+}
+.slide {
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
 
-.container .swiper-slide img {
-  display: block;
+img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
-.container card-description{
-  padding: 1rem;
+  transition: transform 1s;
+  border-radius: 10px;
 }
 
+img:hover {
+  transform: translateZ(20px);
+}
 /* Slider */ 
 
-.slider {
+.slider-1 {
   width: 95%;
   margin: auto;
+  overflow: hidden;
 }
 
-.slider ul{
+.slider-1 ul{
   display: flex;
   padding: 0;
   width: 400%;
-  animation: cambio 20s infinite;
+
+  animation: cambio 20s infinite alternate;
+  animation-timing-function: ease-in;
 }
 
-.slider li {
+.slider-1 li {
   width: 100%;
   list-style: none;
 }
-.slider img {
+.slider-1 img {
   width: 100%;
 }
 
 @keyframes cambio {
-   0% { margin-left: 0; }
-   20% { margin-left: 0; }
+   0% { margin-left: 0;}
+   20% { margin-left: 0;}
 
    
-   25%{margin-left: -100%;}
+   25%{margin-left: -100%;}s
    45%{margin-left: -100%;}
+
+   50%{margin-left: -200%;}
+   70%{margin-left: -200%;}
+
+   75%{margin-left: -300%;}
+   100%{margin-left: -300%;}
 }
