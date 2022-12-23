@@ -177,7 +177,8 @@ h2 {
     outline: none;
     width: 216px;
     height: 45px;
-     box-shadow: none;
+    box-shadow: none;
+    border: none;
 }
 .btn-secondary {
     width: 216px;
@@ -191,7 +192,7 @@ h2 {
     background-color: #568f92;
     outline: none !important;
     border: none !important;
-     box-shadow: none;
+    box-shadow: none;
 }
 
 
@@ -201,7 +202,7 @@ h2 {
 }
 
 .valid-feedback{
-   color: #2acc80;
+  color: #2acc80;
 }
 
 .buttons {
@@ -215,6 +216,12 @@ h2 {
 
 .form-control {
     margin: 0 auto;
+}
+
+.calendar {
+  color: #000;
+  font-weight: 100;
+  border: none;
 }
 
 .square {
@@ -279,4 +286,32 @@ h2 {
   right: 304px;
   width: 60px;
   height: 60px;
+}
+
+.datepicker {
+  margin-top: 13px;
+}
+
+.containerRegresar{ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: -50px ;
+
+}
+
+.regresar {
+
+  width: 250px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7e7e7eab;
+  border-radius: 15px;
+}
+
+.indexBack {
+  color: #ffffffd8;
 }
