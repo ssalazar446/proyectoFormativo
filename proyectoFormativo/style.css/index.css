@@ -252,6 +252,13 @@ body {
       color: #fff;
     }
 
+    .containerTooltip {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+
     .sec2 {
       gap: 12px;
       display: flex;

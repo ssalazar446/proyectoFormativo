@@ -16,7 +16,7 @@
           transition: margin 0.4s ease;
         }
 
-       .texto {
+      .texto {
           margin-left: -50px;
           transition: margin-left 0.4s ease;
         }
@@ -53,10 +53,6 @@
 
       @media (max-width: 765px) {
         .adquirir{
-          background-color: #D8572A;
-          border-radius: 10px;
-          color: #FFFFFF;
-          letter-spacing: 4.25px;
           width: 99.9%;
           height: 50px;
           transition: width 0.8s ease;
@@ -83,7 +79,7 @@
           transition: all 0.4s ease;
         }
 
-       
+      
       }
 
       @media (max-width: 500px) {
@@ -98,3 +94,53 @@
           transition: margin-left 0.4s ease;
         }
       }
+
+      @media (max-width: 420px) {
+
+        .box {
+          margin: 20px 0 0 120px;
+          transition: margin 0.4s ease;
+        }
+
+        .texto {
+          margin-left: -152px;
+          transition: margin-left 0.4s ease;
+        }
+
+        .adquirir{
+          margin-left: 0.5rem;
+          width: auto;
+          height: auto;
+          transition: width 0.8s ease;
+  
+        }
+
+        .parallax {
+          height: 350px;
+          width: auto;
+        }
+
+        #text{
+          font-size: 2rem;
+          translate: none;
+          rotate: none;
+          scale: none;
+          transform: translate(0%, -50%) translate3d(50px, 700.263px, 0px);
+      }
+
+      .logoFooter{
+        width: 350px;
+        transition: width 0.8s ease;
+      }
+
+      .containerTooltip {
+        margin-top: -55px;
+        margin-left: -20px;
+      }
+
+      .bannerFooter {
+        width: 320px;
+      }
+
+    }
+      
