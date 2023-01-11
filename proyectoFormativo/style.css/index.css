@@ -226,7 +226,6 @@ body {
       }
 
     .parallax {
-      border: 2px solid red;
       position: relative;
       display: flex;
       justify-content: center;
